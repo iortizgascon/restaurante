@@ -37,5 +37,16 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+		alert("javascript funciona");
+		$("#prueba").append("<br />app init Dolar funciona");
+		jQuery("#prueba").append("<br />app init jQuery funciona");
            }
 };
+
+jQuery(document).ready(function(){
+	jQuery("#prueba").append("<br />jQuery INIT funciona");
+});
+
+$(document).ready(function(){
+	$("#prueba").append("<br />dolar INIT funciona");
+});
